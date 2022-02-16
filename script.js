@@ -9,10 +9,10 @@ function darkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 	var button = document.getElementById("darkButton");
-	if (button.innerHTML === "Darkify") {
-		button.innerHTML = "Lightify";
+	if (button.innerHTML === "Dark") {
+		button.innerHTML = "Light";
 	} else {
-		button.innerHTML = "Darkify";
+		button.innerHTML = "Dark";
 
 	}
 

@@ -13,14 +13,19 @@
 	<body>
 
 		<!--
-			Center button.
 			Tidy code.
 			LEARN HOW THIS (div and button) WORKS!!!
+			Ask about .button:hover (activated when mouse is hovering (read tooltip))
+			and .topnav a (appllies to <a>s in the topnav class).
+			Center dark mode button.
+			Comment/uncomment code: ctrl + /
+			
 		-->
 
 		<div class="topnav">
 		  <a class="active" href="index.html">Home</a>
 		  <a href="pages/about.html">About</a>
+			<button id="darkButton" class="smallButton" onclick="darkMode()">Dark</button>
 		</div>
 
 		<h1>Welcome</h1>
@@ -31,7 +36,7 @@
 
 				<button class="button" onclick="alertFunction()">Cick me!</button>
 
-				<button id="darkButton" class="button" onclick="darkMode()">Darkify</button>
+				<button id="darkButton" class="button" onclick="darkMode()">Dark</button>
 
 				<button id="magicButton" class="button" onclick="magicAnswer()">Tell me my future!</button>
 

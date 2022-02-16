@@ -47,12 +47,35 @@ p {
 
 }
 
-  .wrap {
+.smallButton {
 
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.smallButton:hover {
+
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+
+}
+
+.wrap {
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -63,6 +86,12 @@ p {
   font-family: verdana;
   font-weight: bold;
   color: red;
+
+}
+
+#darkButton {
+
+  float: right;
 
 }
 
