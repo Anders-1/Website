@@ -92,6 +92,7 @@ p {
 #darkButton {
 
   float: right;
+  margin-left:1300px;
 
 }
 
@@ -113,6 +114,8 @@ img {
 .topnav {
   background-color: #333;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 /* Style the links inside the navigation bar */
