@@ -1,3 +1,4 @@
+//This is old, we can delete it and the button
 function alertFunction() {
 
 	alert("You clicked me!");
@@ -12,11 +13,9 @@ function darkMode() {
 	if (button.innerHTML === "Dark") {
 		button.innerHTML = "Light";
 		setCookie("darkModeToggled", "1", 1)
-		console.log("Cookie darkModeToggled set to 1");
 	} else {
 		button.innerHTML = "Dark";
 		setCookie("darkModeToggled", "0", 1)
-		console.log("Cookie darkModeToggled set to 0");
 
 	}
 
