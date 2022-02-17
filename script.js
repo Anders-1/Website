@@ -37,11 +37,6 @@ function isDarkModeOn() {
 		document.body.classList.toggle("dark-mode")
 		button.innerHTML = "Light";
 
-	// WARNING: Need to fix the case where dark mode was selected,
-	// page reloaded, dark mode checked (working well), dark mode turned off,
-	// then checked (it thinks that dark mode is still on).
-	// also delete old code when done :) !!I THINK THIS IS FIXED BY LINE 38!!
-
 	}
 
 
