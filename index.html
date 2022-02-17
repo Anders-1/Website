@@ -20,7 +20,8 @@
 			and .topnav a (appllies to <a>s in the topnav class).
 			Center dark mode button.
 			Comment/uncomment code: ctrl + /
-
+			Add a save notification (text that appears and says saved) by checking if
+			the "darkModeToggled" cookie is what it should be when saving dark mode data.
 		-->
 
 		<div class="topnav">
@@ -40,6 +41,8 @@
 				<button id="darkButton" class="button" onclick="darkMode()">Dark</button>
 
 				<button id="magicButton" class="button" onclick="magicAnswer()">Tell me my future!</button>
+
+				<button onclick="isDarkModeOn()">Check if dark mode is on</button>
 
 			</div>
 
