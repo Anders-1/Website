@@ -92,6 +92,7 @@ p {
 #darkButton {
 
   float: right;
+  /* WARNING: THIS BUTTON DISAPPEARS IF YOU RESIZE THE WINDOW! */
   margin-left:1300px;
 
 }
