@@ -91,9 +91,18 @@ p {
 
 #darkButton {
 
-  float: right;
+  float: right !important;
   /* WARNING: THIS BUTTON DISAPPEARS IF YOU RESIZE THE WINDOW! */
-  margin-left:1300px;
+  /* I think this is fixed now, just SLIGHT difference in button size. */
+  /* margin-left:1300px; */
+  /* position:absolute; */
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* vertical-align: middle; */
+  /* position: absolute; */
+  top: 100%;
+  transform: translateY(25%);
+  margin-right: 6px;
 
 }
 
@@ -115,8 +124,10 @@ img {
 .topnav {
   background-color: #333;
   overflow: hidden;
-  display: flex;
+  /* display: flex; */
   align-items: center;
+  position:relative;
+  height:100%;
 }
 
 /* Style the links inside the navigation bar */
