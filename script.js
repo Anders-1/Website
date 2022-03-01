@@ -1,4 +1,18 @@
-//This is old, we can delete it and the button
+// Code borrowed from: https://dev.to/maxprogramming/how-to-change-the-favicon-according-to-system-dark-mode-561c
+const faviconTag = document.getElementById("favicon");
+const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+const changeFavicon = () => {
+  if (isDark.matches) faviconTag.href = "dark.svg";
+  else faviconTag.href = "light.svg";
+};
+
+// window.onload = () => changeFavicon();
+changeFavicon()
+setInterval(changeFavicon, 1000);
+
+
+// This is old, we can delete it and the button
 function alertFunction() {
 
 	alert("You clicked me!");
