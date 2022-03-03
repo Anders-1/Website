@@ -3,10 +3,13 @@ const faviconTag = document.getElementById("favicon");
 const isDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 const changeFavicon = () => {
+  // Check if faviconTag is in index.html to fix file not found error.
   if (faviconTag.classList.contains("index")) {
+    // Apply changes based on dark mode set or not.
     if (isDark.matches) faviconTag.href = "dark.svg";
     else faviconTag.href = "light.svg";
   }
+  // Check if faviconTag is in about.html.
   else if (faviconTag.classList.contains("about")) {
     if (isDark.matches) faviconTag.href = "../dark.svg";
     else faviconTag.href = "../light.svg";
