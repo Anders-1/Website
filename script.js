@@ -3,8 +3,14 @@ const faviconTag = document.getElementById("favicon");
 const isDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 const changeFavicon = () => {
-  if (isDark.matches) faviconTag.href = "dark.svg";
-  else faviconTag.href = "light.svg";
+  if (faviconTag.classList.contains("index")) {
+    if (isDark.matches) faviconTag.href = "dark.svg";
+    else faviconTag.href = "light.svg";
+  }
+  else if (faviconTag.classList.contains("about")) {
+    if (isDark.matches) faviconTag.href = "../dark.svg";
+    else faviconTag.href = "../light.svg";
+  }
 };
 
 // window.onload = () => changeFavicon();
