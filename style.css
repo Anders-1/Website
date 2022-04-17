@@ -10,6 +10,7 @@ body {
 }
 
 h1 {
+  font-family: 'Nasalization', serif;
   color: white;
   text-align: center;
 }
@@ -145,3 +146,12 @@ img {
     fill: red;
   }
 } */
+
+/* Nasalization font */
+
+@font-face {
+  font-family: 'Nasalization';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Nasalization'), url('./fonts/nasalization.otf') format('truetype');
+}
